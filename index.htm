@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <centre>
+      <h1>Students Database site</h1>
+    </centre>
+  </head>
+  <body bgcolor="pink">
+    <h2 align="center">You can submit your data here</h2>
+    <form align="center" name="form1" action="insert.php" method="POST">
+      Name:<input type="text" name="name" /><br /><br />
+      Class:<input type="text" name="class" /><br /><br />
+      roll_no:<input type="int" name="roll_no" /><br /><br />
+      DOB:<input type="date" name="DOB" /><br /><br />
+      <input type="submit" name="submit" />
+    </form>
+    <br />
+    <br />
+    <h2 align="center">You can search your data here</h2>
+    <form align="center" name="form2" action="search.php" method="POST">
+      To Search by Name:<input type="text" name="name" />
+      <input type="submit" name="search" value="search" />
+    </form>
+    <form align="center" name="form3" action="delete.php" method="POST">
+      To Delete by Name:<input type="text" name="name" />
+      <input type="submit" name="delete" value="delete" />
+    </form>
+  </body>
+</html>
